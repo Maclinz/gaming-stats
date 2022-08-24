@@ -6,21 +6,52 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+  background-color: #181818;
+  color: #e5e7eb;
+  font-size: 17px;
+}
+
+
+textarea, input, button{
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+a{
   color: inherit;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.load-more{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+body::-webkit-scrollbar{
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(110.42deg, #CF57A3 29.2%, #4731B6 63.56%);
+  border-radius: 15px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(11.42deg, #CF57A3 29.2%, #4731B6 63.56%);
 }
